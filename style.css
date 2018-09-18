@@ -1,0 +1,128 @@
+h1{
+    font-size: 5vh;
+    color: salmon;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+    padding-top: 0;
+}
+body{
+    background-color: lightyellow;
+}
+footer{
+    font-size: 2vh;
+    color: darkblue;
+    text-align: right;
+    text-decoration: cadetblue;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#juego{
+    display: flex;
+    flex-flow: column;
+}
+section{    
+    flex: 1;
+    height: calc(80vh - 7vh);
+    width: 50vw;
+    border: 2px gray solid;
+    border-radius: 5%;
+    background-color: darkgrey;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-size: 2vh;
+    color: darkblue;
+    text-align: center;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+textarea{
+    align-self: center; 
+    justify-content: center;
+    width: 40vw;
+    resize: none;
+    display: block;
+    font-size: 5vh;
+    font-family: fantasy;
+    align-content: center;
+    text-align: center;
+}
+#textojuego{
+    background-color: aquamarine;
+}
+#bar{
+    margin: 20px;
+    width: 40vw;
+    height: 4vh;
+    background-color: aquamarine;
+    border: solid transparent 1px;
+    align-self: center;
+}
+#timeBar {
+    width: 40vw;
+    height: 4vh;
+    background-color: indigo;
+    align-self: center;
+}
+#botones{
+    display: flex;
+    flex-flow: row;
+    height: 10vh;
+    justify-content: center;
+}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    width: 10vw;
+    transition: all 0.1s;
+    cursor: pointer;
+    margin: 5px;
+} 
+.button div {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.button div:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover div {
+    padding-right: 25px;
+}
+.button:hover div:after {
+    opacity: 1;
+    right: 0;
+}
+#table{
+    display: flex;
+    flex-flow: column;
+}
+table{
+    border: 2px solid #f8b9a5;
+    border-collapse: collapse;
+    border-radius: 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    align-self: center;
+    font-size: 3vh;
+}
+.aciertos{
+    color: green; 
+}
+.errores{
+    color:red;
+}

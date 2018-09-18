@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Letra o Languetazo
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Letra o Languetazo</h1>
+</header>
+<section>
+<div id="juego">
+    <p>Ingresa la palabra que aparece a continuación antes que la barra de tiempo se complete! <br> <b>¡Cuidado con las mayúsculas!, termina tu palabra con un Enter!</b></p>
+    <br>
+    <textarea id="textoJuego" rows="1" cols="50" readonly></textarea>
+    <br> 
+    <div id="bar">
+        <div id="timeBar"></div>
+    </div>
+    <br>
+    <textarea id="textoUsuario" rows="1" cols="50" placeholder="Escribe tu respuesta aquí" required></textarea>
+    <br>
+</div>
+<div id="botones">
+    <button type="button" id="botonInicio" class="button"><div>Inicio!</div></button>
+    <button type="button"id="botonPausa" class="button"><div>Pausa</div></button>
+    <button type="button" id="botonReiniciar" class="button"><div>Reiniciar</div></button>
+</div>
+<br>
+<div id="table">
+<table>
+    <tr>
+      <th class="aciertos">Aciertos</th>
+      <th class="errores">Errores</th>
+    </tr>
+    <tr>
+      <td>
+          <div class="aciertos" id="aciertos">0</div>
+      </td>
+      <td>
+          <div class="errores" id="errores">0</div>
+      </td>
+    </tr>
+</table>
+</div>
+</section>
+<footer>
+<br>
+Juego y página desarrollados por <a href="https://github.com/Danisauri" target="_blank">Daniela Vidal</a>
+</footer>
+<script src="script.js"></script>
+</body>    
+</html>
